@@ -1,3 +1,14 @@
+
+#BLOG APPLICATION IN DJANGO
+This is a web site for bloggers where user can create a blog with fields title, author name and body. <br>
+It have some functionality as follows : 
+<ul>
+    <li>User can create blog.</li>
+    <li>User can update blog.</li>
+    <li>User can delete blog.</li>
+</ul>
+
+
 # Developing Django on Repl.it
 
 - Fork this template to get started
@@ -40,4 +51,6 @@ By default this template utilizes the sqlite database engine. While this is fine
 We suggest bringing a database using an outside service. 
 
 See Django documentation on how to setup a database: https://docs.djangoproject.com/en/3.0/intro/tutorial02/
+
+
 
