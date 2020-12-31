@@ -1,5 +1,5 @@
 
-#BLOG APPLICATION IN DJANGO
+# BLOG APPLICATION IN DJANGO
 This is a web site for bloggers where user can create a blog with fields title, author name and body. <br>
 It have some functionality as follows : 
 <ul>
