@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+{% for task in object_list%}
+
+<h1>{{ task.text }}</h1>
+<h2><a href="{% url 'delete_task' task.pk %}">-Delete Task</a></h2>
+
+{% endfor %}
+
+<h1><a href="{% url 'new_task' %}">+ Add New Task</a></h1>
+
+{% endblock content %}
