@@ -163,7 +163,7 @@ public class all_Sorting_algo_switch_case
 
 
     static int partition(int[] arr, int beg, int end){
-        int i=-1, j=0, pivot = arr[end];
+        int i=beg-1, j=beg, pivot = arr[end];
 
         while(j<end){
             if(arr[j]<pivot){
