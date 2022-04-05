@@ -7,7 +7,7 @@ def ShowHomePage(request):
     if(request.method=='POST'):
         city = request.POST['city']
     
-        url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=a19d215168cd3fa0b5b06ed4b373eac7'
+        url = 'http://api.openweathermap.org/'
         
         #city = 'Mumbai'
         r = requests.get(url.format(city)).json()
