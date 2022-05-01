@@ -1,0 +1,9 @@
+
+
+docker --version --->> version check krne ke liye
+
+docker build -t food_website
+docker images
+docker run -itd -p 80:80 --name  image ka name(food_website)
+docker ps
+docker stop $(docker ps -a -q)x

@@ -1,0 +1,306 @@
+/* Css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#logo{
+    margin: 5px 10px;
+    padding: 5px;
+}
+
+#logo img{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    filter: invert(100%);
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 3px 20px;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+
+}
+
+/* Home Section */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    /* margin: 2px 40px; */
+    padding: 5px 20px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid red; */
+
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../images/bg3.jpg') no-repeat center center/cover;
+    height: 68%;
+    width: 100%;
+    opacity: 0.89;
+    z-index: -1;
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+     font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services  */
+
+#services-container{
+    /* border: 10px solid rebeccapurple; */
+    padding: 10px 20px;
+
+
+}
+
+.box{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-box{
+    border: 2px solid brown;
+    background-color: rgb(233, 230, 230);
+    border-radius: 23px;
+    margin: 10px 5px;
+    padding: 2px 5px;
+    height: 450px;
+    width: 450px;
+}
+.box .services-box p{
+    font-family: 'Bree Serif', serif;
+    padding: 3px 20px;
+}
+
+.services-box img{
+    display: block;
+    margin:  10px auto;
+    border: 5px solid black;
+    border-radius: 20px;
+    height: 200px; 
+    width: 300px;
+}
+
+.services-box h2{
+    text-align: center;
+}
+
+
+/* client section */
+
+#section-item{
+    /* border: 10px solid black; */
+    position: relative;
+}
+
+#section-item::before{
+    content: "";
+    background: url('../images/pexels-ella-olsson-1640777.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -1;
+
+    
+}
+
+
+#section-item p{
+    display: flex;
+    /* border: 3px solid crimson; */
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.2rem;
+
+    
+}
+
+.client{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item img{
+    display: block;
+    height: 150px;
+    width: 150px;
+    border:6px solid black;
+    border-radius: 100px;
+    margin: 10px 30px;
+}
+
+/* contact us  */
+
+.contact-us{
+    /* border: 4px solid black; */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.contact-us::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../images/conatct1.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+    
+}
+
+.contact{
+    /* border: 2px solid black; */
+
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.form-group label{
+
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+    
+
+}
+
+input{
+     border: none;
+    background-color: gray;
+    border-bottom: 1px solid black; 
+    outline: none;
+
+}
+
+.bttn{
+    margin: 5px 140px;
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+footer{
+    text-align: center;
+    background-color: rgb(232, 224, 224);
+}
+
+
+
+
+
+/* Utility classes */
+
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+
+}
+
+.h-secondary{
+    font-size: 1.7rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    margin: 15px;
+    border-radius: 10px;
+    background-color:  brown;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
